@@ -20,7 +20,7 @@ const GameGrid = () => {
       >
         {games.map((game) => (
           <GameCard key={game.id} game={game} />
-          //   <li key={game.id}>{game.name}</li>
+          
         ))}
       </SimpleGrid>
     </>

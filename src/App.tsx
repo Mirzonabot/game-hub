@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <>
+    
       <Grid templateAreas = {{
         // `"nav nav" "aside main"`
         base: `"nav" "main"`,
@@ -13,15 +13,14 @@ function App() {
           <NavBar></NavBar>
         </GridItem>
         <Show above="lg">
-        <GridItem area={"aside"} bg={"gold"}>
+        <GridItem area={"aside"} >
           aside
         </GridItem>
         </Show>
-        <GridItem area={"main"} bg={"dodgerblue"}>
+        <GridItem area={"main"}>
           main
         </GridItem>
       </Grid>
-    </>
   );
 }
 
